@@ -16,7 +16,7 @@ export default class Weather extends React.Component {
 
         icon:undefined,
         temp: undefined,
-        city: undefined,
+        city: 'city ...',
         country:undefined ,
         humidity: undefined,
         sunset: undefined,
@@ -59,8 +59,8 @@ export default class Weather extends React.Component {
    <input type='text'  placeholder='Choose city..' name='city' />
         </form>
 
-<p>{this.state.city}</p>
-<p>{this.state.temp }</p>
+<p>In {this.state.city}{'  '}{this.state.temp }</p>
+<p></p>
 <p>Today is {this.state.description}</p>
 
         </div>

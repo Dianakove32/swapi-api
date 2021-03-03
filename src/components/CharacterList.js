@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Spiner from './Spiner'
 import Weather from './Weather'
+import '../App.scss'
 
 
 const url = "https://swapi.dev/api/people/"
@@ -48,18 +49,21 @@ export default function CharacterList(props) {
     return (
 
 
-        <div>
+        <div className='wrapper'>
 <Weather/>
-            <h2>Character's name </h2>
+            <h2>Character's name </h2> <div className='content'>
 {!state.characters ? <Spiner/> : (state.characters.map((el, index) => {
                 return (
-                    <div>
+
+                          <div className='card-name'>
 
                         <p key={index}> {el.name}</p>
-                        <button onClick={() => onClick(el.name)}>Learn more</button>
+                        <button className='button' onClick={() => onClick(el.name)}>Learn more</button>
                     </div>
+
+
                 )
-            }))}
+            }))} </div>
 
         </div>
     )

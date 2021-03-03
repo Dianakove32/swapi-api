@@ -5,9 +5,9 @@ export default function Character(props) {
      console.log( 'xzdcgxfh')
 
      return (
-         <div>
+         <div className="caracter-card">
 
- <Link to="/characterList">Go back</Link>
+ <Link className="link" to="/characterList">Go back</Link>
 
  <h2><b>Name: </b>{props.location.state?.randomCharacter.name}</h2>
  <p><b>Birth_year: </b>{props.location.state?.randomCharacter.birth_year}</p>
