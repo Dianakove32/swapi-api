@@ -18,8 +18,8 @@ function App() {
   <Switch>
   <Route exact path="/"  render={(props)=><Home {...props}/>}/>
   <Route path="/weather" render= {(props)=> <Weather {...props}/> }/>
+  <Route path="/characterList/:height" render= {(props)=> <Character {...props}/> }/>
   <Route path="/characterList" render= {(props)=> <CharacterList {...props}/> }/>
-  <Route path="/character" render= {(props)=> <Character {...props}/> }/>
 </Switch>
     </div>
   );
