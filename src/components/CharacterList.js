@@ -3,7 +3,7 @@ import Spiner from './Spiner'
 import Weather from './Weather'
 
 
-const url = "http://swapi.dev/api/people/"
+const url = "https://swapi.dev/api/people/"
 const initialState = {
     characters: [],
     randomCharacter: {}
