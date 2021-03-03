@@ -6,7 +6,7 @@ import '../App.scss'
 
 const url = "https://swapi.dev/api/people/"
 const initialState = {
-    characters: [],
+    characters: null,
     randomCharacter: {}
 }
 
